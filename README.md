@@ -21,8 +21,6 @@ A test API service for solar credit data using Fastify.
 ## API Endpoints
 
 - `GET /api/test` - Test endpoint
-- `GET /api/hooks` - Mock hooks endpoint
-  - Query params: `triggerName`, `orgId`
 - `GET /api/solar-quote` - Mock solar credit quote
 - `GET /api/registry/retirements` - Mock retirements endpoint
   - Query params: `for_address`, `date_gte`

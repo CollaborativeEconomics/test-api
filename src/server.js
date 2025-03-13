@@ -40,16 +40,6 @@ fastify.get("/api/test", async () => {
   return { message: "Hello test!" };
 });
 
-// Mock hooks route
-fastify.get("/api/hooks", async (request) => {
-  const trigger = request.query.triggerName;
-  const orgId = request.query.orgId;
-  if (orgId === "stellar" && trigger === "onceDaily") {
-    return generateSolarCreditData();
-  }
-  return { message: "No matching hook found." };
-});
-
 // Mock solar credit quote
 fastify.get("/api/solar-quote", async () => {
   return {
