@@ -1,0 +1,19 @@
+{
+  "name": "test-solar-api",
+  "version": "1.0.0",
+  "description": "A test API service for solar credit data using Fastify",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "fastify": "^4.26.1",
+    "@fastify/cors": "^9.0.1",
+    "@faker-js/faker": "^8.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+} 
