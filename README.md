@@ -26,11 +26,9 @@ A mock API service for testing solar credit data integration. This API provides 
 ## API Endpoints
 
 ### Test Endpoint
-
-- `GET /api/test` - Test endpoint
-- `GET /api/solar-quote` - Mock solar credit quote
-- `GET /api/registry/retirements` - Mock retirements endpoint
-  - Query params: `for_address`, `date_gte`
+```
+GET https://test-api-seven-mauve.vercel.app/api/test
+```
 
 Simple health check endpoint that returns a hello message.
 
@@ -42,6 +40,9 @@ Simple health check endpoint that returns a hello message.
 ```
 
 ### Solar Credit Quote
+```
+GET https://test-api-seven-mauve.vercel.app/api/solar-quote
+```
 
 Returns a mock solar credit quote with randomized pricing data.
 
@@ -55,6 +56,9 @@ Returns a mock solar credit quote with randomized pricing data.
 ```
 
 ### Registry Retirements
+```
+GET https://test-api-seven-mauve.vercel.app/api/registry/retirements
+```
 
 Returns detailed mock data about solar credit retirements.
 
